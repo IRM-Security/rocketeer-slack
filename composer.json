@@ -14,15 +14,31 @@
 			"email": "ehtnam6@gmail.com"
 		}
 	],
+	"repositories": [
+		{
+			"type": "vcs",
+			"url": "https://github.com/IRM-Security/rocketeer.git"
+		},
+		{
+			"type": "vcs",
+			"url": "https://github.com/IRM-Security/rocketeer-remote.git"
+		}
+	],
 	"require": {
 		"php": ">=5.4.0",
-		"illuminate/support": "~4.2",
-		"anahkiasen/rocketeer": "^2.0",
+		"illuminate/support": "~5.0",
+		"rocketeers/rocketeer": "dev-master",
 		"maknz/slack": "^1.7"
 	},
 	"autoload": {
 		"psr-4": {
 			"Rocketeer\\Plugins\\Slack\\": "src/Slack"
+		}
+	},
+	"minimum-stability": "dev",
+	"config": {
+		"allow-plugins": {
+			"kylekatarnls/update-helper": false
 		}
 	}
 }
